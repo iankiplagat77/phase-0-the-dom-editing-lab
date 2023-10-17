@@ -1,23 +1,46 @@
-document.addEventListener('DOMContentLoaded',()=>{
-let submitButton =document.getElementById ('submit-button');
-let todolist =document.getElementById('todo list'); 
+<!-- Write your code here! -->
+"<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Introduction to the DOM Lab</title>
+  </head>
+  <body>
 
-fetch('http://127.0.0.1:3000/todos')
-.then(res => res.json())
-.then(todos =>console.log(todos ) )
+    <h1>My HTML adventure</h1>
+    <p>
+        '<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"></a>
+        We're writing HTML markup to display in our <strong>browser</strong>. We're
+        basically telling computers what to do. <em>Neat!</em>
+      </p>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> markup to
+display in our <strong>browser</strong>.
 
-Form.addEventListener('submit',(e) =>{
- e.preventDefault(); 
- let inputElem =document.getElementById('todo list');
- 
-
-let listItem =document.createElement('li');
-console.log(listItem)
-listItem.innerText=inputElem.ariaValueMax;
-todolist.appendChild(listItem);
-
-}
-)
-
-}
-)
+<table>
+    <thead>
+      <tr>
+        <th>Element name</th>
+        <th>Display value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>h1</td>
+        <td>block</td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td>block</td>
+      </tr>
+      <tr>
+        <td>strong</td>
+        <td>inline</td>
+      </tr>
+      <tr>
+        <td>em</td>
+        <td>inline</td>
+      </tr>
+    </tbody>
+  </table>":
